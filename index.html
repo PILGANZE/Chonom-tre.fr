@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Déclare l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assure la compatibilité mobile -->
+    <title>Chronomètre</title> <!-- Titre de la page -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Équipe PILGANZE">
+<meta name="description" content=" Bienvenu sur notre site . Vous avez accès à notre chronomètre et ce gratuitement. Bon usage.  " >
+    <link rel="stylesheet" href="Pencil.css"> <!-- Lien vers la feuille de style -->
+    <!--Favicon-->
+    <link rel="icon" href="Réveil.webp" type="image/.webp">
+    <script src="Programme.js"></script> <!-- Lien vers le fichier JavaScript -->
+
+</head>
+<body>
+   <div class="Chrono"> <!-- Conteneur principal pour le chronomètre -->
+
+       <div class="Time"> <!-- Zone où les valeurs de temps seront affichées -->
+           <!-- Paragraphes pour afficher les heures, minutes et secondes -->
+           <p>0 h:</p>
+           <p>0 min:</p>
+           <p>0 s.</p>
+       </div>
+
+       <div class="controls"> <!-- Zone des contrôles (boutons) -->
+           <!-- Bouton pour démarrer le chronomètre -->
+           <button id="One" onclick="Go()">Commencer</button> 
+
+           <!-- Bouton pour arrêter le chronomètre -->
+           <button id="Two" onclick="Stop()">Stop</button>
+
+           <!-- Bouton pour remettre le chronomètre à zéro -->
+           <button id="Three" onclick="Zero()">Recommencer</button>
+       </div>
+
+   </div>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+/* Réinitialisation des marges et des paddings pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur totale */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Police par défaut */
+}
+
+/* Styles pour le corps de la page */
+body {
+    display: flex; /* Utilisation du flexbox pour centrer les éléments */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    justify-content: center; /* Aligne les éléments horizontalement au centre */
+    min-height: 100vh; /* Hauteur minimale de la fenêtre pour occuper tout l'écran */
+    background-color: #FFFF00; /* Fond de la page en jaune */
+}
+
+/* Conteneur principal pour le chronomètre */
+.Chrono {
+    background-color: white; /* Fond blanc pour le chronomètre */
+    padding: 10px; /* Espace intérieur */
+    border-radius: 6px; /* Coins arrondis */
+    width: 400px; /* Largeur fixe */
+    text-align: center; /* Centrer le contenu à l'intérieur */
+}
+
+/* Zone d'affichage du temps */
+.Time {
+    margin: auto; /* Centrer horizontalement */
+    width: 80%; /* Largeur relative au conteneur parent */
+    border: 1px solid silver; /* Bordure grise */
+    border-radius: 6px; /* Coins arrondis */
+    padding: 5px 0px; /* Espacement vertical */
+    text-align: center; /* Centrer le texte */
+    font-size: 30px; /* Taille de police des valeurs du temps */
+    font-weight: 400; /* Poids de la police normal */
+    margin-bottom: 10px; /* Espacement en bas */
+    display: flex; /* Affichage en flexbox */
+    flex-direction: row; /* Aligner les paragraphes horizontalement */
+}
+
+/* Style des paragraphes contenant les valeurs de temps */
+.Time p {
+    padding: 10px; /* Espacement autour des valeurs */
+}
+
+/* Zone des contrôles (boutons) */
+.controls {
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Espacement égal entre les boutons */
+    width: 100%; /* Occuper toute la largeur */
+    padding: 10px; /* Espacement interne */
+}
+
+/* Styles généraux pour les boutons */
+button {
+    background-color: black; /* Fond noir */
+    color: white; /* Texte blanc */
+    font-size: 10px; /* Taille de la police */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    border: 0; /* Pas de bordure */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+    width: 31%; /* Largeur des boutons */
+    transition: 0.5s; /* Transition pour les effets */
+    cursor: pointer; /* Curseur en pointeur au survol */
+}
+
+/* Effet au survol des boutons */
+button:hover {
+    transform: scale(0.9); /* Réduction de la taille à 90% */
+}
